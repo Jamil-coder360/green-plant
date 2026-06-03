@@ -34,10 +34,10 @@ const About = () => {
             <div>
                 <div className="flex  items-center justify-between gap-[19]">
                     <h2 className="text-[#285A43] text-[36px] font-normal leading-[140%] font-lato tracking-[4%] max-w-[476px]">We Help choose the most suitable plants for you</h2>
-                    <p className="text-[#121212] text-[18p]font-railway font-medium max-w-[648px] ">Our selection includes a wide variety of flowers, from classic roses to exotic orchids, as well as a variety of lush indoor and outdoor plants and also offer unique floral arrangements that are perfect for any occasion, whether you're looking to brighten up your home or send a thoughtful gift. </p>
+                    <p className="text-[#121212] text-[18px] font-railway font-medium max-w-[648px] ">Our selection includes a wide variety of flowers, from classic roses to exotic orchids, as well as a variety of lush indoor and outdoor plants and also offer unique floral arrangements that are perfect for any occasion, whether you're looking to brighten up your home or send a thoughtful gift. </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-20 mt-24">
                     {aboutCardData.map((card) => (
                         <AboutCard key={card.id} icon={card.icon} title={card.title} description={card.description} />
                     ))}
