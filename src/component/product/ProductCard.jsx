@@ -11,17 +11,12 @@ const ProductCard = ({ plant }) => {
   return (
     <div className="w-full shadow-lg rounded-lg relative overflow-hidden bg-white">
       <div className="w-full h-62.5 overflow-hidden relative">
-   <Image
-  src={
-    plant?.default_image?.regular_url &&
-    !plant.default_image.regular_url.includes("upgrade_access")
-      ? plant.default_image.regular_url
-      : "/placeholder.png"
-  }
-  alt={plant?.common_name || "Plant"}
-  fill
-  className="object-cover"
-/>
+        <Image
+          src={imageUrl}
+          alt={plant?.common_name || 'Plant'}
+          fill
+          className="object-cover"
+        />
       </div>
 
       <div className="absolute top-4 right-4 z-10 bg-white rounded-full p-2">

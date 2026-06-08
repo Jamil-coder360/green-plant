@@ -36,10 +36,9 @@ const Benifits = () => {
    <section className="py-30">
     <div className="container mx-auto">
         <div className="grid grid-cols-2 ">
-          <div>
-            <Image
-            src={benifit}
-            />
+          <div className="h-[780p]">
+       
+            <img src={benifit} alt="Benefit Image" />
           </div>
         
                 <div className="grid grid-cols-1 md:grid-cols-2">
