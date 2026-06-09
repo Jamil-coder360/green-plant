@@ -16,24 +16,24 @@ const OurGallary = () => {
         </div>
         <div className="grid grid-cols-[500px_460px_460px] gap-2.5">
             <div>
-                <Image src={gallary_1}  />
+                <Image src={gallary_1} alt="Gallery Image 1" />
             </div>
             <div className="grid grid-cols-1 gap-2.5">
               <div>
-                <Image src={gallary_2}  />
+                <Image src={gallary_2} alt="Gallery Image 2" />
             </div>
               <div>
-                <Image src={gallary_3}  />
+                <Image src={gallary_3} alt="Gallery Image 3" />
             </div>
 
 
             </div>
             <div className="grid grid-cols-1 gap-2.5">
                   <div>
-                <Image src={gallary_4}  />
+                <Image src={gallary_4} alt="Gallery Image 4" />
             </div>
               <div>
-                <Image src={gallary_5}  />
+                <Image src={gallary_5} alt="Gallery Image 5" />
             </div>
 
 
