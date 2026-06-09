@@ -4,7 +4,9 @@ import benifit from "../../assets/benifit.png"
 import About_1 from '../Icons/about_1';
 import About_2 from '../Icons/about_2';
 import About_3 from '../Icons/about_3';
+import benifit_4 from '../Icons/benifit_4';
 import AboutCard from '../about/AboutCard';
+import BenifitCard from './BenifitCard';
 
 const Benifits = () => {
 
@@ -30,25 +32,32 @@ const Benifits = () => {
     description:
       "Discover our exclusive range of rare and exotic plants sourced from around the world.",
   },
+  {
+    id: 4,
+    icon: benifit_4,
+    title: "Rare Collections",
+    description:
+      "Discover our exclusive range of rare and exotic plants sourced from around the world.",
+  },
 ];
 
   return (
    <section className="py-30">
-    <div className="container mx-auto">
+    {/* <div className="container mx-auto"> */}
         <div className="grid grid-cols-2 ">
-          <div className="h-[780p]">
+          <div className="">
        
-            <img src={benifit} alt="Benefit Image" />
+            <Image src={benifit} alt="Benefit Image" height={760} width={720} />
           </div>
         
-                <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 space-x-0">
                     {aboutCardData.map((card) => (
-                        <AboutCard key={card.id} icon={card.icon} title={card.title} description={card.description} />
+                        <BenifitCard key={card.id} icon={card.icon} title={card.title} description={card.description} />
                     ))}
 
                 </div>
         </div>
-    </div>
+    {/* </div> */}
    </section>
   )
 }
