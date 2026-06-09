@@ -1,5 +1,6 @@
 import About from '@/component/about/About';
 import Benifits from '@/component/benifits/Benifits';
+import Blog from '@/component/blog/Blog';
 import Cta from '@/component/cta/Cta';
 import OurGallary from '@/component/gallary/OurGallary';
 import Hero from '@/component/Hero';
@@ -17,6 +18,7 @@ const HomePage = () => {
     <OurGallary />
     <Testimonial />
     <Cta />
+    <Blog />
     </>
   )
 }
